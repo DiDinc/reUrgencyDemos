@@ -1,2 +1,11 @@
-<p>Mobile: {{isMobile}}</p>
-<p>Compass Heading: {{sds.heading}}</p>
+<h3>Geolocation Information</h3>
+<p>Latitude: {{sds.position.coords.latitude}}</p>
+<p>Longitude: {{sds.position.coords.longitude}}</p>
+<p>Altitude: {{sds.position.coords.altitude}}</p>
+<p>Accuracy: {{sds.position.coords.accuracy}}</p>
+<p>Altitude Accuracy: {{sds.position.coords.altitudeAccuracy}}</p>
+<p>Heading: {{sds.position.coords.heading}}</p>
+<p>Speed: {{sds.position.coords.speed}}</p>
+<p>Timestamp: {{sds.position.timestamp}}</p>
+<button ng-show="!isPolling" ng-click="startPolling()">Start Polling For Location Info</button>
+<button ng-show="isPolling" ng-click="stopPolling()">Stop Polling For Location Info</button>

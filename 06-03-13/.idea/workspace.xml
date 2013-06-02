@@ -6,10 +6,10 @@
     <ignored path=".idea/workspace.xml" />
     <file path="/routers.js" changelist="ce445647-afa4-42cf-a3be-6433d0878caf" time="1370193860750" ignored="false" />
     <file path="/one.html" changelist="ce445647-afa4-42cf-a3be-6433d0878caf" time="1370149873912" ignored="false" />
-    <file path="/controllers.js" changelist="ce445647-afa4-42cf-a3be-6433d0878caf" time="1370211838348" ignored="false" />
+    <file path="/controllers.js" changelist="ce445647-afa4-42cf-a3be-6433d0878caf" time="1370214365663" ignored="false" />
     <file path="/index.html" changelist="ce445647-afa4-42cf-a3be-6433d0878caf" time="1370189186437" ignored="false" />
     <file path="/sharedDataService.js" changelist="ce445647-afa4-42cf-a3be-6433d0878caf" time="1370190346525" ignored="false" />
-    <file path="/home.html" changelist="ce445647-afa4-42cf-a3be-6433d0878caf" time="1370203562297" ignored="false" />
+    <file path="/home.html" changelist="ce445647-afa4-42cf-a3be-6433d0878caf" time="1370214328055" ignored="false" />
     <file path="/desktop.html" changelist="ce445647-afa4-42cf-a3be-6433d0878caf" time="1370198105385" ignored="false" />
     <file path="/SharedDataService.js" changelist="ce445647-afa4-42cf-a3be-6433d0878caf" time="1370202303839" ignored="false" />
     <file path="/desktop2.html" changelist="ce445647-afa4-42cf-a3be-6433d0878caf" time="1370201137958" ignored="false" />
@@ -46,7 +46,7 @@
       <file leaf-file-name="controllers.js" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/js/controllers.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="25" column="41" selection-start="705" selection-end="705" vertical-scroll-proportion="0.51369864">
+            <state line="42" column="29" selection-start="1160" selection-end="1160" vertical-scroll-proportion="0.7328767">
               <folding />
             </state>
           </provider>
@@ -64,7 +64,7 @@
       <file leaf-file-name="home.html" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/partials/home.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="1" column="6" selection-start="34" selection-end="34" vertical-scroll-proportion="-0.625">
+            <state line="10" column="42" selection-start="577" selection-end="577" vertical-scroll-proportion="-6.25">
               <folding />
             </state>
           </provider>
@@ -73,7 +73,7 @@
       <file leaf-file-name="config.xml" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/config.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="6" column="28" selection-start="294" selection-end="294" vertical-scroll-proportion="0.0">
+            <state line="25" column="61" selection-start="950" selection-end="950" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -114,11 +114,11 @@
         <option value="$PROJECT_DIR$/partials/desktop.html" />
         <option value="$PROJECT_DIR$/js/routers.js" />
         <option value="$PROJECT_DIR$/partials/desktop2.html" />
-        <option value="$PROJECT_DIR$/config.xml" />
         <option value="$PROJECT_DIR$/Shared/Services/SharedDataService.js" />
-        <option value="$PROJECT_DIR$/partials/home.html" />
         <option value="$PROJECT_DIR$/index.html" />
         <option value="$PROJECT_DIR$/js/app.js" />
+        <option value="$PROJECT_DIR$/config.xml" />
+        <option value="$PROJECT_DIR$/partials/home.html" />
         <option value="$PROJECT_DIR$/js/controllers.js" />
       </list>
     </option>
@@ -399,13 +399,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/config.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="6" column="28" selection-start="294" selection-end="294" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/js/routers.js">
       <provider selected="true" editor-type-id="text-editor">
         <state line="21" column="39" selection-start="553" selection-end="553" vertical-scroll-proportion="0.0">
@@ -434,16 +427,23 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/config.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="25" column="61" selection-start="950" selection-end="950" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/partials/home.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="1" column="6" selection-start="34" selection-end="34" vertical-scroll-proportion="-0.625">
+        <state line="10" column="42" selection-start="577" selection-end="577" vertical-scroll-proportion="-6.25">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/js/controllers.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="25" column="41" selection-start="705" selection-end="705" vertical-scroll-proportion="0.51369864">
+        <state line="42" column="29" selection-start="1160" selection-end="1160" vertical-scroll-proportion="0.7328767">
           <folding />
         </state>
       </provider>

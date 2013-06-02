@@ -18,15 +18,49 @@ function HomeCtrl($scope,$location,sharedData) {
         $location.path('/desktop');
     }
 
-    function onSuccess(heading) {
-        sharedData.heading = heading.magneticHeading;
+    function onPositionSuccess(position) {
+        sharedData.position = position;
     };
 
-    function onError(error) {
-        alert('CompassError: ' + JSON.stringify(error));
+    function onPositionError(error) {
+        alert('Geolocation Error: ' + JSON.stringify(error));
     };
 
-    navigator.compass.getCurrentHeading(onSuccess, onError);
+    $scope.keepPolling = function () {
+        if ($scope.isPolling) {
+            if ($scope.pollCount > 0) {
+                $scope.pollCount--;
+                $timeout($scope.getLocation, 5000);
+            } else {
+                $scope.stopPolling();
+            }
+        }
+    };
+
+    $scope.startPolling = function () {
+        $scope.isPolling = true;
+        $scope.pollCount = 60;
+        $scope.keepPolling();
+    };
+
+    $scope.stopPolling = function () {
+        $scope.isPolling = false;
+        $scope.pollCount = 60;
+    };
+
+    $scope.getLocation = function(){
+        navigator.geolocation.getCurrentPosition(onPositionSuccess, onPositionError);
+    }
+
+    $scope.startPolling = function(){
+        $scope.isPolling = true;
+        $scope.keepPolling();
+    }
+
+    $scope.isPolling = false;
+    $scope.pollCount = 60;
+
+    $scope.getLocation();
 }
 
 function DesktopCtrl($scope,$location,sharedData) {
