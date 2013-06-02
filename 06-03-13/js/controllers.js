@@ -23,7 +23,7 @@ function HomeCtrl($scope,$location,sharedData) {
     };
 
     function onError(error) {
-        alert('CompassError: ' + json.stringify(error));
+        alert('CompassError: ' + JSON.stringify(error));
     };
 
     navigator.compass.getCurrentHeading(onSuccess, onError);
