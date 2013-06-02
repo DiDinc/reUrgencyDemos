@@ -11,8 +11,9 @@
     <file path="/sharedDataService.js" changelist="ce445647-afa4-42cf-a3be-6433d0878caf" time="1370190346525" ignored="false" />
     <file path="/home.html" changelist="ce445647-afa4-42cf-a3be-6433d0878caf" time="1370190573764" ignored="false" />
     <file path="/desktop.html" changelist="ce445647-afa4-42cf-a3be-6433d0878caf" time="1370198105385" ignored="false" />
-    <file path="/SharedDataService.js" changelist="ce445647-afa4-42cf-a3be-6433d0878caf" time="1370198438480" ignored="false" />
+    <file path="/SharedDataService.js" changelist="ce445647-afa4-42cf-a3be-6433d0878caf" time="1370202303839" ignored="false" />
     <file path="/desktop2.html" changelist="ce445647-afa4-42cf-a3be-6433d0878caf" time="1370201137958" ignored="false" />
+    <file path="/config.xml" changelist="ce445647-afa4-42cf-a3be-6433d0878caf" time="1370202101290" ignored="false" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -32,10 +33,10 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="SharedDataService.js" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="SharedDataService.js" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/Shared/Services/SharedDataService.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="15" column="30" selection-start="478" selection-end="478" vertical-scroll-proportion="0.0">
+            <state line="4" column="28" selection-start="124" selection-end="124" vertical-scroll-proportion="0.08219178">
               <folding />
             </state>
           </provider>
@@ -59,10 +60,19 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="home.html" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="home.html" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/partials/home.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="1" column="67" selection-start="95" selection-end="95" vertical-scroll-proportion="0.02124646">
+            <state line="1" column="67" selection-start="95" selection-end="95" vertical-scroll-proportion="-0.625">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="config.xml" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/config.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="108" column="33" selection-start="7896" selection-end="7896" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -96,9 +106,10 @@
         <option value="$PROJECT_DIR$/index.html" />
         <option value="$PROJECT_DIR$/partials/desktop.html" />
         <option value="$PROJECT_DIR$/js/routers.js" />
-        <option value="$PROJECT_DIR$/Shared/Services/SharedDataService.js" />
         <option value="$PROJECT_DIR$/partials/desktop2.html" />
         <option value="$PROJECT_DIR$/js/controllers.js" />
+        <option value="$PROJECT_DIR$/config.xml" />
+        <option value="$PROJECT_DIR$/Shared/Services/SharedDataService.js" />
       </list>
     </option>
   </component>
@@ -168,6 +179,7 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$" />
       <recent name="$PROJECT_DIR$/partials" />
       <recent name="$PROJECT_DIR$/css" />
       <recent name="$PROJECT_DIR$/img" />
@@ -304,15 +316,6 @@
     <breakpoint-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/partials/desktop.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="1" column="8" selection-start="31" selection-end="31" vertical-scroll-proportion="0.0">
-          <folding>
-            <element signature="n#style#0;n#h3#0;n#!!top" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/js/routers.js">
       <provider selected="true" editor-type-id="text-editor">
         <state line="17" column="38" selection-start="441" selection-end="441" vertical-scroll-proportion="0.0">
@@ -384,13 +387,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Shared/Services/SharedDataService.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="15" column="30" selection-start="478" selection-end="478" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/partials/desktop2.html">
       <provider selected="true" editor-type-id="text-editor">
         <state line="8" column="22" selection-start="360" selection-end="360" vertical-scroll-proportion="0.0">
@@ -407,7 +403,21 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/partials/home.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="1" column="67" selection-start="95" selection-end="95" vertical-scroll-proportion="0.02124646">
+        <state line="1" column="67" selection-start="95" selection-end="95" vertical-scroll-proportion="-0.625">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/config.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="108" column="33" selection-start="7896" selection-end="7896" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Shared/Services/SharedDataService.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="4" column="28" selection-start="124" selection-end="124" vertical-scroll-proportion="0.08219178">
           <folding />
         </state>
       </provider>
