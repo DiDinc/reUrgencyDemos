@@ -18,3 +18,9 @@ var app = {
         alert('device ready');
     }
 };
+
+window.onerror=function(msg, url, linenumber){
+    alert('Error message: ' + msg + '\nURL: ' + url + '\nLine Number: ' + linenumber)
+    console.log('Error message: ' + msg + '\nURL: ' + url + '\nLine Number: ' + linenumber);
+    return true
+}
