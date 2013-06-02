@@ -9,12 +9,24 @@ function AppController($scope){
 }
 
 function HomeCtrl($scope,$location,sharedData) {
+    $scope.sds = sharedData;
     $scope.isMobile = sharedData.isMobile;
+
     if( $scope.isMobile ){
         $scope.phonegapVersion = sharedData.phonegapVersion();
     }else{
         $location.path('/desktop');
     }
+
+    function onSuccess(heading) {
+        sharedData.heading = heading.magneticHeading;
+    };
+
+    function onError(error) {
+        alert('CompassError: ' + error.code);
+    };
+
+    navigator.compass.getCurrentHeading(onSuccess, onError);
 }
 
 function DesktopCtrl($scope,$location,sharedData) {
