@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html ng-app="App">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <meta name="format-detection" content="telephone=no" />
+    <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width, height=device-height, target-densitydpi=device-dpi" />
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" type="text/css" href="css/bootstrap-responsive.min.css" />
+    <title>Angular Js &amp; PhoneGap</title>
+</head>
+<body>
+
+    <!-- Main Body -->
+    <div class="container-fluid">
+        <div class="row-fluid"  ng-controller="AppController">
+            <span class="span1">
+                <img src="img/logo.png">
+            </span>
+            <span class="span11">
+                <h4>{{appTitle}}</h4>
+            </span>
+        </div>
+        <hr/>
+        <div class="row-fluid">
+            <!--Here go the partials -->
+            <div ng-view></div>
+        </div>
+        <div class="row-fluid">
+            <!-- Footer -->
+            <hr/>
+            <footer ng-controller="AppController">
+                <p>{{ versionNumber }} &copy; {{ companyName }} {{copyrightYear}} - <span><a href="tel:{{companyPhone}}">{{companyPhone}}</a></span></p>
+            </footer>
+        </div>
+    </div>
+
+    <!-- Libs -->
+    <script type="text/javascript" src="lib/cordova-2.5.0.js"></script>
+    <script type="text/javascript" src="lib/angular-1.0.5.js"></script>
+    <script type="text/javascript" src="js/bootstrap.min.js"></script>
+    <!-- App -->
+    <script type="text/javascript" src="Shared/Services/SharedDataService.js"></script>
+    <script type="text/javascript" src="js/app.js"></script>
+    <script type="text/javascript" src="js/routers.js"></script>
+    <script type="text/javascript" src="js/controllers.js"></script>
+
+    <script type="text/javascript">
+        app.initialize();
+    </script>
+</body>
+</html>

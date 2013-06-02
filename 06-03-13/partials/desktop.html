@@ -1,0 +1,19 @@
+<h3 style="width: 100%;text-align: center">Desktop Version</h3>
+<div class="row-fluid">
+    <span class="span4">
+        The following block reads from shared data.
+        <h5>{{sds.desktopData}}</h5>
+    </span>
+    <span class="span4">
+        <button ng-click="getDesktopData()">Get shared data and load it into $scope</button>
+    </span>
+    <span class="span4">
+        <p>This Text area reads from $scope that will get populated with our shared data</p>
+        <textarea ng-model="mockData"></textarea>
+        <p>Pressing the button below will update shared data with our modified content</p>
+        <button ng-click="updateMockData()">Update Shared Data</button>
+    </span>
+</div>
+<div class="row-fluid" ng-show="showStepTwo">
+    <button ng-click="goToStepTwo()">Next</button>
+</div>
