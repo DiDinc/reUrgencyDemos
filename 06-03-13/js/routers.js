@@ -10,6 +10,10 @@ angular.module('App', [
 
     $routeProvider
     .when('/', {
+        controller: HomeCtrl,
+        templateUrl: 'partials/home.html'
+    })
+    .when('/acc', {
         controller: AccCtrl,
         templateUrl: 'partials/acc.html'
     })

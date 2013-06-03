@@ -1,11 +1,28 @@
 'use strict';
 
-function AppController($scope){
+function AppController($scope,$location,sharedData){
+    $scope.location = $location;
+    $scope.sds = sharedData;
+    $scope.isMobile = sharedData.isMobile;
+
     $scope.appTitle = 'AngularJs + PhoneGap';
     $scope.companyName = 'reUrgency, LLC.';
     $scope.copyrightYear = new Date().getFullYear();
     $scope.companyPhone = '888-609-8222';
     $scope.versionNumber = 'v. 1.0';
+
+}
+
+function HomeCtrl($scope,$location,sharedData) {
+    $scope.sds = sharedData;
+    $scope.isMobile = sharedData.isMobile;
+    $scope.location = $location;
+
+    if( $scope.isMobile ){
+        $scope.phonegapVersion = sharedData.phonegapVersion();
+    }else{
+        $location.path('/desktop');
+    }
 }
 
 function AccCtrl($scope,$location,$timeout,sharedData) {
