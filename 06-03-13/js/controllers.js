@@ -31,7 +31,7 @@ function AccCtrl($scope,$location,$timeout,sharedData) {
         if ($scope.isPolling) {
             if ($scope.pollCount > 0) {
                 $scope.pollCount--;
-                $timeout($scope.getAcc, 5000);
+                $timeout($scope.getAcc, 200);
             } else {
                 $scope.stopPolling();
             }
@@ -40,13 +40,13 @@ function AccCtrl($scope,$location,$timeout,sharedData) {
 
     $scope.startPolling = function () {
         $scope.isPolling = true;
-        $scope.pollCount = 60;
+        $scope.pollCount = 1500;
         $scope.keepPolling();
     };
 
     $scope.stopPolling = function () {
         $scope.isPolling = false;
-        $scope.pollCount = 60;
+        $scope.pollCount = 1500;
     };
 
     $scope.getAcc = function(){
@@ -59,7 +59,7 @@ function AccCtrl($scope,$location,$timeout,sharedData) {
     }
 
     $scope.isPolling = false;
-    $scope.pollCount = 60;
+    $scope.pollCount = 1500;
 
     $scope.getAcc();
 }
@@ -86,7 +86,7 @@ function GeoCtrl($scope,$location,$timeout,sharedData) {
         if ($scope.isPolling) {
             if ($scope.pollCount > 0) {
                 $scope.pollCount--;
-                $timeout($scope.getLocation, 5000);
+                $timeout($scope.getLocation, 200);
             } else {
                 $scope.stopPolling();
             }
@@ -95,13 +95,13 @@ function GeoCtrl($scope,$location,$timeout,sharedData) {
 
     $scope.startPolling = function () {
         $scope.isPolling = true;
-        $scope.pollCount = 60;
+        $scope.pollCount = 1500;
         $scope.keepPolling();
     };
 
     $scope.stopPolling = function () {
         $scope.isPolling = false;
-        $scope.pollCount = 60;
+        $scope.pollCount = 1500;
     };
 
     $scope.getLocation = function(){
@@ -114,7 +114,7 @@ function GeoCtrl($scope,$location,$timeout,sharedData) {
     }
 
     $scope.isPolling = false;
-    $scope.pollCount = 60;
+    $scope.pollCount = 1500;
 
     $scope.getLocation();
 }
