@@ -8,7 +8,62 @@ function AppController($scope){
     $scope.versionNumber = 'v. 1.0';
 }
 
-function HomeCtrl($scope,$location,sharedData) {
+function AccCtrl($scope,$location,sharedData) {
+    $scope.sds = sharedData;
+    $scope.isMobile = sharedData.isMobile;
+
+    if( $scope.isMobile ){
+        $scope.phonegapVersion = sharedData.phonegapVersion();
+    }else{
+        $location.path('/desktop');
+    }
+
+    function onAccSuccess(acceleration) {
+        sharedData.acceleration = acceleration;
+    };
+
+    function onAccError(error) {
+        alert('accelerometer Error: ' + JSON.stringify(error));
+    };
+
+    $scope.keepPolling = function () {
+        if ($scope.isPolling) {
+            if ($scope.pollCount > 0) {
+                $scope.pollCount--;
+                $timeout($scope.getAcc, 5000);
+            } else {
+                $scope.stopPolling();
+            }
+        }
+    };
+
+    $scope.startPolling = function () {
+        $scope.isPolling = true;
+        $scope.pollCount = 60;
+        $scope.keepPolling();
+    };
+
+    $scope.stopPolling = function () {
+        $scope.isPolling = false;
+        $scope.pollCount = 60;
+    };
+
+    $scope.getAcc = function(){
+        navigator.geolocation.getCurrentAcceleration(onAccSuccess, onAccError);
+    }
+
+    $scope.startPolling = function(){
+        $scope.isPolling = true;
+        $scope.keepPolling();
+    }
+
+    $scope.isPolling = false;
+    $scope.pollCount = 60;
+
+    $scope.getAcc();
+}
+
+function GeoCtrl($scope,$location,sharedData) {
     $scope.sds = sharedData;
     $scope.isMobile = sharedData.isMobile;
 

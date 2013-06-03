@@ -1,0 +1,7 @@
+<h3>Accelerometer Information</h3>
+<p>Acceleration X: {{sds.acceleration.x}}</p>
+<p>Acceleration Y: {{sds.acceleration.y}}</p>
+<p>Acceleration Z: {{sds.acceleration.z}}</p>
+<p>Timestamp: {{sds.acceleration.timestamp}}</p>
+<button ng-show="!isPolling" ng-click="startPolling()">Start Polling For Location Info</button>
+<button ng-show="isPolling" ng-click="stopPolling()">Stop Polling For Location Info</button>

@@ -12,12 +12,15 @@ angular.module('SharedDataService', [])
             }
             return p;
         }
-        var currentHeading;
+        var position;
+        var acceleration;
         var desktopData = null;
+
         return {
             isMobile:isMobile,
             phonegapVersion:phonegapVersion,
-            heading:currentHeading,
+            position:position,
+            acceleration:acceleration,
             desktopData:desktopData
         };
     });

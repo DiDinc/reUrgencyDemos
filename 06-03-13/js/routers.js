@@ -10,8 +10,12 @@ angular.module('App', [
 
     $routeProvider
     .when('/', {
-        controller: HomeCtrl,
-        templateUrl: 'partials/home.html'
+        controller: AccCtrl,
+        templateUrl: 'partials/acc.html'
+    })
+    .when('/geo', {
+        controller: GeoCtrl,
+        templateUrl: 'partials/geo.html'
     })
     .when('/desktop', {
         controller: DesktopCtrl,
