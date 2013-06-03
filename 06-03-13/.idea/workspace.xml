@@ -13,7 +13,7 @@
     <file path="/desktop.html" changelist="ce445647-afa4-42cf-a3be-6433d0878caf" time="1370198105385" ignored="false" />
     <file path="/SharedDataService.js" changelist="ce445647-afa4-42cf-a3be-6433d0878caf" time="1370217511348" ignored="false" />
     <file path="/desktop2.html" changelist="ce445647-afa4-42cf-a3be-6433d0878caf" time="1370201137958" ignored="false" />
-    <file path="/config.xml" changelist="ce445647-afa4-42cf-a3be-6433d0878caf" time="1370202101290" ignored="false" />
+    <file path="/config.xml" changelist="ce445647-afa4-42cf-a3be-6433d0878caf" time="1370219648544" ignored="false" />
     <file path="/app.js" changelist="ce445647-afa4-42cf-a3be-6433d0878caf" time="1370215457178" ignored="false" />
     <file path="/acc.html" changelist="ce445647-afa4-42cf-a3be-6433d0878caf" time="1370217290845" ignored="false" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -53,10 +53,19 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="index.html" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="index.html" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="38" column="4" selection-start="1432" selection-end="1432" vertical-scroll-proportion="0.68130314">
+            <state line="38" column="4" selection-start="1432" selection-end="1432" vertical-scroll-proportion="-20.041666">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="config.xml" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/config.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="45" column="61" selection-start="3164" selection-end="3164" vertical-scroll-proportion="0.35564855">
               <folding />
             </state>
           </provider>
@@ -114,7 +123,6 @@
         <option value="$PROJECT_DIR$/js/sharedDataService.js" />
         <option value="$PROJECT_DIR$/partials/desktop.html" />
         <option value="$PROJECT_DIR$/partials/desktop2.html" />
-        <option value="$PROJECT_DIR$/config.xml" />
         <option value="$PROJECT_DIR$/partials/home.html" />
         <option value="$PROJECT_DIR$/js/routers.js" />
         <option value="$PROJECT_DIR$/partials/acc.html" />
@@ -122,6 +130,7 @@
         <option value="$PROJECT_DIR$/js/controllers.js" />
         <option value="$PROJECT_DIR$/js/app.js" />
         <option value="$PROJECT_DIR$/index.html" />
+        <option value="$PROJECT_DIR$/config.xml" />
       </list>
     </option>
   </component>
@@ -393,13 +402,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/config.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="43" column="152" selection-start="2930" selection-end="2930" vertical-scroll-proportion="0.31380752">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/res/icon/ios/icon-57.png">
       <provider selected="true" editor-type-id="images">
         <state />
@@ -469,7 +471,14 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="38" column="4" selection-start="1432" selection-end="1432" vertical-scroll-proportion="0.68130314">
+        <state line="38" column="4" selection-start="1432" selection-end="1432" vertical-scroll-proportion="-20.041666">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/config.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="45" column="61" selection-start="3164" selection-end="3164" vertical-scroll-proportion="0.35564855">
           <folding />
         </state>
       </provider>
