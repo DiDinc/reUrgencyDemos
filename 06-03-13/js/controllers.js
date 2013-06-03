@@ -8,7 +8,7 @@ function AppController($scope){
     $scope.versionNumber = 'v. 1.0';
 }
 
-function AccCtrl($scope,$location,sharedData) {
+function AccCtrl($scope,$location,$timeout,sharedData) {
     $scope.sds = sharedData;
     $scope.isMobile = sharedData.isMobile;
 
@@ -20,6 +20,7 @@ function AccCtrl($scope,$location,sharedData) {
 
     function onAccSuccess(acceleration) {
         sharedData.acceleration = acceleration;
+        $scope.keepPolling();
     };
 
     function onAccError(error) {
@@ -49,7 +50,7 @@ function AccCtrl($scope,$location,sharedData) {
     };
 
     $scope.getAcc = function(){
-        navigator.geolocation.getCurrentAcceleration(onAccSuccess, onAccError);
+        navigator.accelerometer.getCurrentAcceleration(onAccSuccess, onAccError);
     }
 
     $scope.startPolling = function(){
@@ -63,7 +64,7 @@ function AccCtrl($scope,$location,sharedData) {
     $scope.getAcc();
 }
 
-function GeoCtrl($scope,$location,sharedData) {
+function GeoCtrl($scope,$location,$timeout,sharedData) {
     $scope.sds = sharedData;
     $scope.isMobile = sharedData.isMobile;
 
