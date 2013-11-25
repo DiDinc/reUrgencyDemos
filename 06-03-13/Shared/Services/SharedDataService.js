@@ -2,7 +2,8 @@
 
 angular.module('SharedDataService', [])
     .service('sharedData', function () {
-        var isMobile = true//(/iPhone|iPod|iPad|Android|BlackBerry/).test(navigator.userAgent);
+        var isMobile = true
+        //var isMobile = (/iPhone|iPod|iPad|Android|BlackBerry/).test(navigator.userAgent);
         var phonegapVersion = function(){
             var p;
             if (navigator.device) {

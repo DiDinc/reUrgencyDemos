@@ -1,5 +1,15 @@
 'use strict';
 
+function FBOGController($scope,$location,sharedData){
+    $scope.OGMeta = {};
+    $scope.OGMeta.locale = "en_US";
+    $scope.OGMeta.site_name = "reUrgency Code Playground";
+    $scope.OGMeta.title = "Test OG Page Title";
+    $scope.OGMeta.type = "website";
+    $scope.OGMeta.image = "http://dynamicinternetdevelopment.com/wp-content/uploads/2012/12/textLogo2.png";
+    $scope.OGMeta.description = "Test OG Description Text";
+}
+
 function AppController($scope,$location,sharedData){
     $scope.location = $location;
     $scope.sds = sharedData;
@@ -68,11 +78,6 @@ function AccCtrl($scope,$location,$timeout,sharedData) {
 
     $scope.getAcc = function(){
         navigator.accelerometer.getCurrentAcceleration(onAccSuccess, onAccError);
-    }
-
-    $scope.startPolling = function(){
-        $scope.isPolling = true;
-        $scope.keepPolling();
     }
 
     $scope.isPolling = false;

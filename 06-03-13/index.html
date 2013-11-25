@@ -11,6 +11,20 @@
     <link rel="stylesheet" type="text/css" href="css/bootstrap-responsive.min.css" />
     <link rel="stylesheet" type="text/css" href="css/index.css" />
     <title>Angular Js &amp; PhoneGap</title>
+    <!--FACEBOOK META-->
+    <!--<meta ng-controller="FBOGController" property="og:locale" content="{{OGMeta.locale}}" />
+    <meta ng-controller="FBOGController" property="og:site_name" content="{{OGMeta.site_name}}"/>
+    <meta ng-controller="FBOGController" property="og:title" content="{{OGMeta.title}}"/>
+    <meta ng-controller="FBOGController" property="og:type" content="{{OGMeta.type}}"/>
+    <meta ng-controller="FBOGController" property="og:image" content="{{OGMeta.image}}"/>
+    <meta ng-controller="FBOGController" property="og:description" content="{{OGMeta.description}}" />-->
+
+    <meta property="og:site_name" content="reUrgency Code Playground"/>
+    <meta property="og:title" content="Test OG Page Title"/>
+    <meta property="og:type" content="website"/>
+    <meta property="og:image" content="http://reurgency.dynamicinternetdevelopment.com/demos/06-03-13/img/aasbd_logo.jpg"/>
+    <meta property="og:description" content="Test OG Page Description" />
+    <!--END FACEBOOK META-->
 </head>
 <body>
 
@@ -29,6 +43,7 @@
         <div class="row-fluid span12">
             <!--Here go the partials -->
             <div ng-view></div>
+            <img src="img/aasbd_logo.jpg"/>
         </div>
         <div class="row-fluid span12">
             <!-- Footer -->
@@ -41,8 +56,8 @@
 
     <!-- Libs -->
     <!--THIS WILL GET INJECTED BY PG BUILD-->
-    <script src="phonegap.js"></script>
-    <!--<script type="text/javascript" src="lib/cordova-2.5.0.js"></script>-->
+    <!--<script src="phonegap.js"></script>-->
+    <script type="text/javascript" src="lib/cordova-2.5.0.js"></script>
     <script type="text/javascript" src="lib/angular-1.0.5.js"></script>
     <script type="text/javascript" src="js/bootstrap.min.js"></script>
     <!-- App -->
